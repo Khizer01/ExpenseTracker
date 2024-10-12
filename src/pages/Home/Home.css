@@ -1,0 +1,139 @@
+:root {
+  --primary-color: #007BFF;
+  --secondary-color: #6C757D;
+  --background-color: #F8F9FA;
+  --surface-color: #FFFFFF;
+  --text-color: #343A40;
+  --accent-color: #FF3D00;
+  --dark--primary-color: #1E88E5;
+  --dark--secondary-color: #8C98A4;
+  --dark--background-color: #121212;
+  --dark--surface-color: #1E1E1E;
+  --dark--text-color: #E0E0E0;
+  --dark--accent-color: #F4511E;
+}
+
+
+.home {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  overflow-x: hidden;
+  position: relative;
+  top: 60px;
+}
+
+.home .charts{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+}
+
+.homeWidgets {
+  display: flex;
+  margin: 20px;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 548px) {
+  .homeWidgets {
+      margin: 20px 0px;
+  }
+
+  .home .charts{
+    padding: 10px 0px;
+    border-radius: 8px;
+  }
+}
+
+.home.dark-mode {
+  color: var(--dark--text-color); 
+  background-color: var(--dark--background-color);
+}
+
+
+.spinner {
+  width: 44px;
+  height: 44px;
+  animation: spinner-y0fdc1 2s infinite ease;
+  transform-style: preserve-3d;
+ }
+ 
+ .spinner > div {
+  background-color: #12121229;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2px solid var(--dark--background-color);
+ }
+ 
+ .spinner div:nth-of-type(1) {
+  transform: translateZ(-22px) rotateY(180deg);
+ }
+ 
+ .spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+ }
+ 
+ .spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+ }
+ 
+ .spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+ }
+ 
+ .spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+ }
+ 
+ .spinner div:nth-of-type(6) {
+  transform: translateZ(22px);
+ }
+ 
+ @keyframes spinner-y0fdc1 {
+  0% {
+   transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+ 
+  50% {
+   transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+ 
+  100% {
+   transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+ }
+
+
+.dark-mode .spinner > div {
+  background-color: #e0e0e021;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2px solid var(--dark--text-color);
+ }
+
+
+@media (max-width: 566px) {
+  .home {
+      margin-left: 0; 
+  }
+  
+  .homeWidgets {
+      margin: 20px 0px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}

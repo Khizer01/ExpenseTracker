@@ -1,0 +1,248 @@
+.manageExpense {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow-x: hidden;
+  top: 60px;
+}
+
+.manageExpense h1 {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.expenseContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.expenseContainer .col-1,
+.expenseContainer .col-2,
+.expenseContainer .col-3 {
+  background-color: var(--surface-color);
+  border-radius: 10px;
+  padding: 15px;
+  flex: 1;
+  margin: 0 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.expenseContainer .title h2 {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.expenseContainer .list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.expenseContainer .list ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.expenseContainer .list ul li:last-child {
+  border-bottom: none;
+}
+
+.expenseContainer .list ul li .expense p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.error {
+  color: var(--accent-color);
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.createTransactionBtn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.createTransactionBtn:hover {
+  background-color: var(--accent-color);
+}
+
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: var(--surface-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 90%;
+}
+
+.modalContent h2 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.modalContent label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+.modalContent select,
+.modalContent input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.modalContent button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modalContent button:hover {
+  background-color: var(--accent-color);
+}
+
+.popupMessage {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  animation: fadeInOut 2s forwards;
+}
+
+.transactions {
+  margin-top: 30px;
+}
+
+.transactions .heading {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.transactions .heading .filterIcon {
+  margin-right: 10px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.transactions .heading .filterIcon:hover {
+  color: var(--primary-color);
+}
+
+.transactions h2 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.transactionList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.transactions .list {
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.transactionCard {
+  border: 1px solid var(--primary-color);
+  padding: 15px;
+  border-radius: 8px;
+  background-color: var(--surface-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userTransaction {
+  margin-bottom: 20px;
+}
+
+.userTransaction h3 {
+  padding-bottom: 5px;
+}
+
+.deleteIcon {
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.deleteIcon:hover {
+  color: var(--primary-color);
+}
+
+.modalContent .btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}

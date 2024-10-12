@@ -1,0 +1,40 @@
+.chart-container .css-10vg0a6-MuiResponsiveChart-container {
+  width: 100%;
+  height: 100%;
+}
+
+.chart-container .css-66gjpw-MuiResponsiveChart-container {
+  width: 100%;
+  height: 100%;
+  padding: 30px 40px 30px 0;
+}
+
+.charts text {
+  fill: var(--text-color);
+}
+
+.dark-mode .charts text {
+  fill: var(--dark-text-color) !important;
+}
+
+.dark-mode .charts line {
+  stroke: var(--dark-text-color) !important;
+}
+
+.dark-mode .charts .chart-container {
+  border: 1px solid var(--dark-navbar-hover-color);
+  box-shadow: -1px 2px 10px var(--dark-navbar-hover-color);
+}
+
+@media screen and (max-width: 768px) {
+  .charts .chart-container {
+    min-width: 330px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .charts .chart-container {
+    min-width: 185px;
+  }
+}

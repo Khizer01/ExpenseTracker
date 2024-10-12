@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.app {
+  display: flex;
+  flex-direction: column; 
+  height: 100vh; 
+}
+
+.app.dark-mode {
+  background-color: var(--dark--background-color) !important;
+  color: var(--dark--text-color);
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  transition: margin-left 0.3s ease; 
+}
+
+.sidebar-open .container {
+  margin-left: 250px; 
+}
+
+.sidebar-closed .container {
+  margin-left: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; 
+    margin-left: 0; 
+  }
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

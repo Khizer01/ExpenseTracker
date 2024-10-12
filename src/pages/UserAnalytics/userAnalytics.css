@@ -1,0 +1,120 @@
+.userList {
+    flex: 4;
+    padding: 20px;
+    background-color: var(--surface-color); 
+    color: var(--text-color);
+    position: relative;
+    top: 55px;
+}
+
+
+.userListUser {
+    display: flex;
+    align-items: center;
+}
+
+.userListEdit {
+    border: none;
+    border-radius: 5px;
+    padding: 6px 13px;
+    background-color: var(--primary-color); 
+    color: var(--surface-color); 
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.userListEdit:hover {
+    background-color: var(--accent-color); 
+    transform: scale(1.1);
+}
+
+.MuiDataGrid-cell {
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .userList {
+        padding: 10px;
+    }
+
+    .userListEdit {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .userListUser {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .userListEdit {
+        padding: 4px;
+        font-size: 10px;
+    }
+    
+    .userListUser {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 12px;
+    }
+}
+
+
+.userList.dark-mode .MuiDataGrid-root {
+    background-color: var(--dark-surface-color); 
+    color: var(--dark-text-color); 
+}
+
+.userList.dark-mode .MuiDataGrid-columnHeaders {
+    background-color: var(--dark-navbar-bg-color);
+    color: var(--dark-text-color); 
+}
+
+.userList.dark-mode .css-4k60b2-MuiDataGrid-root .MuiDataGrid-container--top [role=row], .css-4k60b2-MuiDataGrid-root .MuiDataGrid-container--bottom [role=row] {
+    background-color: var(--dark-navbar-bg-color) !important;
+    color: var(--dark-text-color);
+}
+
+.userList.dark-mode .css-1y5vrnu-MuiButtonBase-root-MuiCheckbox-root {
+    color: var(--dark--secondary-color);
+}
+
+.userList.dark-mode .MuiDataGrid-cell {
+    color: var(--dark-text-color); 
+}
+
+.userList.dark-mode .MuiDataGrid-row:hover {
+    background-color: var(--dark-navbar-hover-color);
+}
+
+.userList.dark-mode .userListEdit {
+    background-color: var(--dark-primary-color); 
+    color: var(--dark-text-color); 
+}
+
+.userList.dark-mode .userListEdit:hover {
+    background-color: var(--dark-accent-color); 
+    color: var(--dark-text-color);
+}
+
+.userList.dark-mode {
+    background-color: var(--dark-surface-color); 
+    color: var(--dark-text-color); 
+}
+
+.userList.dark-mode     .css-16og44m-MuiToolbar-root-MuiTablePagination-toolbar {
+    color: var(--background-color);
+}
+/* 
+.userList.dark-mode .css-rm9hue-MuiSvgIcon-root-MuiSelect-icon path {
+    color: var(--dark-text-color);
+} */
+
+.userList.dark-mode .css-1kcqes5-MuiButtonBase-root-MuiIconButton-root.Mui-disabled {
+    color: var(--dark--text-color);
+}

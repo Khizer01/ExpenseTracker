@@ -1,0 +1,140 @@
+{
+  "user-data": [
+    {
+      "id": "1",
+      "name": "admin",
+      "role": true,
+      "expenditures": [
+        {
+          "category": "Food",
+          "amount": 420
+        },
+        {
+          "category": "Transport",
+          "amount": 145
+        },
+        {
+          "category": "Entertainment",
+          "amount": 85
+        },
+        {
+          "category": "Health",
+          "amount": 200
+        }
+      ],
+      "account": [
+        {
+          "name": "Sada Pay",
+          "amount": 800
+        },
+        {
+          "name": "HBL",
+          "amount": 500
+        },
+        {
+          "name": "Bank Al Habib",
+          "amount": 900
+        }
+      ],
+      "category": [
+        {
+          "category": "Food",
+          "amount": 300
+        },
+        {
+          "category": "Transport",
+          "amount": 145
+        },
+        {
+          "category": "Entertainment",
+          "amount": 85
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Jane",
+      "expenditures": [
+        {
+          "category": "Food",
+          "amount": 150
+        },
+        {
+          "category": "Transport",
+          "amount": 70
+        },
+        {
+          "category": "Clothing",
+          "amount": 60
+        },
+        {
+          "category": "Entertainment",
+          "type": "Expense",
+          "amount": 100,
+          "account": "My Account"
+        },
+        {
+          "category": "Health",
+          "type": "Expense",
+          "amount": 100,
+          "account": "My Account"
+        }
+      ],
+      "account": [
+        {
+          "name": "Sada Pay",
+          "amount": 100
+        },
+        {
+          "name": "HBL",
+          "amount": 80
+        },
+        {
+          "name": "Bank Al Habib",
+          "amount": 1000
+        }
+      ],
+      "category": [
+        {
+          "category": "Food",
+          "amount": 200
+        },
+        {
+          "category": "Transport",
+          "amount": 100
+        },
+        {
+          "category": "Entertainment",
+          "amount": 100
+        },
+        {
+          "category": "Health",
+          "amount": 200
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin",
+      "role": true,
+      "lang": "en"
+    },
+    {
+      "id": "2",
+      "username": "Jane",
+      "password": "user123",
+      "role": false,
+      "lang": "es"
+    },
+    {
+      "id": "3",
+      "username": "user2",
+      "password": "user123",
+      "role": false,
+      "lang": "fr"
+    }
+  ]
+}

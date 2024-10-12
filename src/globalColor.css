@@ -1,0 +1,20 @@
+:root {
+    /* Light mode colors */
+    --primary-color: #007BFF;
+    --secondary-color: #6C757D;
+    --background-color: #F8F9FA;
+    --surface-color: #FFFFFF;
+    --text-color: #343A40;
+    --accent-color: #FF3D00;
+
+    /* Dark mode colors */
+    --dark-primary-color: #1E88E5;
+    --dark-secondary-color: #8C98A4;
+    --dark-background-color: #121212; 
+    --dark-surface-color: #1B1B1B; 
+    --dark-text-color: #E0E0E0; 
+    --dark-accent-color: #F4511E;
+    --dark-navbar-bg-color: #2C2C2C; 
+    --dark-navbar-hover-color: #3A3A3A; 
+    --dark-orange-color: #ee832c; 
+}

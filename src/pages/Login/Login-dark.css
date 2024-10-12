@@ -1,0 +1,44 @@
+.login.dark-mode .login-wrapper {
+  background-color: var(--dark-surface-color);
+  box-shadow: 3px 4px 10px var(--dark-secondary-color);
+}
+
+.login.dark-mode .login-wrapper form a {
+  color: var(--dark-primary-color);
+}
+
+.login.dark-mode .login-wrapper form a:hover {
+  color: var(--dark-accent-color);
+}
+
+.login.dark-mode .login-wrapper .title {
+  color: var(--dark-text-color);
+}
+
+.login.dark-mode .login-wrapper form input {
+  border-color: var(--dark-secondary-color);
+}
+
+.login.dark-mode .login-wrapper form .input > input:focus,
+.login.dark-mode .login-wrapper form .input > input:not(:placeholder-shown) {
+  border-color: var(--dark-primary-color);
+}
+
+.login.dark-mode .login-wrapper form .input > input:focus + label,
+.login.dark-mode .login-wrapper form .input > input:not(:placeholder-shown) + label {
+  color: var(--dark-primary-color);
+  background-color: var(--dark-surface-color);
+}
+
+.login.dark-mode form button {
+  background-color: var(--dark-primary-color);
+  color: var(--dark-surface-color);
+}
+
+.login.dark-mode form button:hover {
+  background-color: var(--dark-accent-color);
+}
+
+.login.dark-mode .login-error {
+  color: var(--dark-accent-color);
+}

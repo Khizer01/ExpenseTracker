@@ -1,0 +1,41 @@
+.topbar.dark-mode {
+  background-color: var(--dark-surface-color) !important; /* Light black-grey navbar */
+  color: var(--dark-text-color) !important; /* Light grey/white text */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) !important; /* Subtle shadow for depth */
+}
+
+/* Navbar icons and hover effects */
+.topbar.dark-mode .topbarIconContainer {
+  color: var(--dark-text-color) !important; /* White icons */
+}
+
+.topbar.dark-mode .topbarIconContainer:hover {
+  color: var(--dark-secondary-color) !important; /* Slightly lighter hover effect */
+}
+
+/* Navbar links and logo */
+.topbar.dark-mode .logo {
+  color: var(--dark-text-color) !important; /* White logo */
+}
+
+.topbar.dark-mode .s-container ul li:hover {
+  color: var(--dark-secondary-color) !important; /* Light grey hover effect */
+}
+
+/* Navbar background when hovering */
+.topbar.dark-mode .s-container ul {
+  background-color: var(--dark-navbar-bg-color); /* Dark grey dropdown */
+  border-color: var(--dark-navbar-hover-color); /* Grey border */
+}
+
+/* Dropdown menu items */
+.topbar.dark-mode .s-container ul li {
+  background-color: var(--dark-surface-color);
+  color: var(--dark-text-color);
+}
+
+/* Hover effect for dropdown items */
+.topbar.dark-mode .s-container ul li:hover {
+  background-color: var(--dark-navbar-hover-color);
+  color: var(--dark-secondary-color);
+}

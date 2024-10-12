@@ -1,0 +1,64 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.userContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  align-items: center;
+  gap: 15px;
+}
+
+.userContainer .userTitle {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.userContainer button {
+  border: none;
+  padding: 10px 22px;
+  background-color: var(--accent-color);
+  color: var(--surface-color);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.home.dark-mode .userContainer button {
+  background-color: var(--primary-color);
+}
+
+.home.dark-mode .userContainer button:hover {
+  background-color: var(--dark--secondary-color);
+}
+
+.userContainer button:hover {
+  background-color: var(--dark--background-color);
+}
+
+.charts .chart-container {
+    flex: 1;
+    color: var(--dark--text-color);
+  border: 1px solid var(--dark-text-color);
+  box-shadow: -1px 2px 10px var(--dark--text-color);
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.charts .MuiBarChart-root {
+  color: var(--text-color);
+}
+
+.charts .MuiPieChart-root {
+    color: var(--text-color);
+}
+
+
+.dark-mode .userContainer button:hover {
+  background-color: var(--dark--secondary-color);
+}

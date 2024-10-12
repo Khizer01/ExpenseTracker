@@ -1,0 +1,72 @@
+.dark-mode .modalContent {
+    background-color: var(--dark-surface-color);
+    color: var(--dark-text-color);
+  }
+  
+  .dark-mode .modalContent h2 {
+    color: var(--dark-primary-color);
+  }
+  
+  .dark-mode .modalContent select,
+  .dark-mode .modalContent input {
+    background-color: var(--dark-surface-color);
+    color: var(--dark-text-color);
+  }
+  
+  .dark-mode .modalContent label {
+    color: var(--dark-text-color);
+  }
+  
+  .dark-mode .modalContent button {
+    background-color: var(--dark-primary-color);
+  }
+  
+  .dark-mode .modalContent button:hover {
+    background-color: var(--dark-accent-color);
+  }
+  
+  .dark-mode .popupMessage {
+    background-color: var(--dark-accent-color);
+  }
+  
+  .dark-mode .manageExpense {
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color);
+  }
+  
+  .dark-mode .expenseContainer .col-1,
+  .dark-mode .expenseContainer .col-2,
+  .dark-mode .expenseContainer .col-3 {
+    background-color: var(--dark-surface-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .dark-mode .expenseContainer .title h2 {
+    color: var(--dark-primary-color);
+  }
+  
+  .dark-mode .expenseContainer .list ul li {
+    border-bottom: 1px solid var(--dark-secondary-color);
+  }
+  
+  .dark-mode .error {
+    color: var(--dark-accent-color);
+  }
+  
+  .dark-mode .transactions .list {
+    background-color: var(--dark-surface-color);
+    color: var(--dark-text-color);
+  }
+  
+  .dark-mode .transactions .list ul li {
+    border-bottom: 1px solid var(--dark-secondary-color);
+  }
+  
+  .dark-mode .transactions h2 {
+    color: var(--dark-primary-color);
+  }
+  
+  .dark-mode .transactionCard {
+    border: 1px solid var(--dark-primary-color);
+    background-color: var(--dark-surface-color);
+  }

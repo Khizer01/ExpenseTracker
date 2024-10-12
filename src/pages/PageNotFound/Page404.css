@@ -1,0 +1,44 @@
+.page404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.page404 .contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.page404 .imagenotfound {
+    width: 33%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: var(--accent-color);
+}
+
+.page404.dark .back-btn {
+    background-color: var(--accent-color);
+}
+
+.page404.dark .back-btn:hover {
+    background-color: var(--primary-color);
+}
